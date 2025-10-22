@@ -3,9 +3,6 @@
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 2em;
-    flex-direction: column;
-    align-items: center;
-    flex: 1 1 100%;
     }
 
 .cat-breed {
@@ -37,4 +34,14 @@
     margin: 0.5em 0 1em;
 }
 
-@media (max-width: 768px) {.cat-breed}
+@media (max-width: 768px) {
+    .cat-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cat-breed {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 0.5em 0;
+    }
+}
